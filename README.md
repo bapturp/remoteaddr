@@ -1,5 +1,8 @@
 # remoteaddr
 
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/bapturp/remoteaddr/build-and-push.yaml)
+
+
 Simple webserver that replies request information as they are seen by the 
 webserver.
 
