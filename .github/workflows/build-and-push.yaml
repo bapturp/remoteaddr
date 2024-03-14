@@ -1,4 +1,4 @@
-name: Publish docker image
+name: Test, build and push docker image
 
 on:
   release:
@@ -9,7 +9,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  push_to_registry:
+  test_build_push:
     name: Push Docker image to ghcr.io
     runs-on: ubuntu-latest
     permissions:

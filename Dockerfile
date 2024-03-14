@@ -1,7 +1,8 @@
 FROM golang:1.22 as builder
 WORKDIR /build
-COPY src/ .
+COPY . .
 RUN go mod download && go mod verify
+RUN go test
 RUN CGO_ENABLED=0 GOOS=linux go build -v -o remoteaddr
 
 FROM scratch
