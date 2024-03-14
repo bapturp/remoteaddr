@@ -1,4 +1,4 @@
-name: Test, build and push docker image
+name: Build and push
 
 on:
   release:
@@ -9,8 +9,8 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  test_build_push:
-    name: Push Docker image to ghcr.io
+  test_build:
+    name: Build and push docker image
     runs-on: ubuntu-latest
     permissions:
       contents: read

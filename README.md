@@ -6,8 +6,7 @@
 Simple webserver that replies request information as they are seen by the 
 webserver.
 
-Usefull to troubleshoot reverse proxy and load balancer especially in 
-kubernetes.
+Usefull to troubleshoot reverse proxies, load balancers and API Gateways.
 
 ```
 ➜  ~ curl http://127.0.0.1:8080/
