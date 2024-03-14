@@ -10,13 +10,13 @@ Usefull to troubleshoot reverse proxies, load balancers and API Gateways.
 
 ```
 ➜  ~ curl http://127.0.0.1:8080/
-2024-03-12 12:03:16
+2024-03-14 22:59:57
 GET / HTTP/1.1
-Remote address: 192.168.127.1:53651
-Host: 127.0.0.1:8080
----- HEADERS ----
-Accept: */*
-User-Agent: curl/8.4.0
+Remote address: 192.168.127.1:30693
+Host:           127.0.0.1:8080
+Headers:
+  User-Agent: curl/8.4.0
+  Accept: */*
 ```
 
 ## Usage
