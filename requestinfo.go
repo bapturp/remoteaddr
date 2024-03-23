@@ -8,9 +8,12 @@ import (
 	"time"
 )
 
+var addr string = ":8080"
+
 func main() {
 	http.HandleFunc("/", RequestInfo)
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Printf("Server listening on %v\n", addr)
+	log.Fatal(http.ListenAndServe(addr, nil))
 }
 
 func RequestInfo(w http.ResponseWriter, r *http.Request) {
