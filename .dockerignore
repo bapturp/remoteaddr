@@ -1,5 +1,4 @@
-README.md
-LICENSE
-.git
-.gitignore
-.github
+# Ignore files that are not related to Go.
+!**/*.go
+!**/*.mod
+!**/*.sum
