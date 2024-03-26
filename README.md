@@ -1,7 +1,6 @@
 # remoteaddr
 
-![GitHub Actions Workflow Status](https://github.com/bapturp/remoteaddr/actions/workflows/main.yaml/badge.svg)
-
+![GitHub Actions Workflow Status](https://github.com/bapturp/remoteaddr/actions/workflows/release.yaml/badge.svg) ![GitHub Actions Workflow Status](https://github.com/bapturp/remoteaddr/actions/workflows/test.yaml/badge.svg)
 
 Simple webserver that replies request information as they are seen by the 
 webserver.
