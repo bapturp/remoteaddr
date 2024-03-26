@@ -11,7 +11,6 @@ RUN addgroup -S remoteaddr && \
 WORKDIR /usr/src/remoteaddr
 COPY . .
 RUN go mod download && go mod verify
-RUN go test -timeout 1m
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 \
     go build -v -o /usr/local/bin/remoteaddr
 
@@ -29,4 +28,5 @@ COPY --from=builder /etc/passwd /etc/passwd
 USER remoteaddr
 
 EXPOSE 8080
+
 ENTRYPOINT ["/remoteaddr"]

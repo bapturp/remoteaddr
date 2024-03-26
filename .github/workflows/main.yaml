@@ -1,4 +1,4 @@
-name: Build and push
+name: Build and release container image
 
 on:
   release:
@@ -9,8 +9,8 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  test_build:
-    name: Build and push docker image
+  build:
+    name: Build and release container image
     runs-on: ubuntu-latest
     permissions:
       contents: read
