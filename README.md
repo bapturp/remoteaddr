@@ -1,9 +1,8 @@
 # remoteaddr
 
-![GitHub Actions Workflow Status](https://github.com/bapturp/remoteaddr/actions/workflows/test.yaml/badge.svg) ![GitHub Actions Workflow Status](https://github.com/bapturp/remoteaddr/actions/workflows/release.yaml/badge.svg)
+![GitHub Actions Workflow Test Status](https://github.com/bapturp/remoteaddr/actions/workflows/test.yaml/badge.svg) ![GitHub Actions Workflow Release Status](https://github.com/bapturp/remoteaddr/actions/workflows/release.yaml/badge.svg)
 
-Simple webserver that replies request information as they are seen by the 
-webserver.
+ Simple web server that replies to requests by echoing the information it receives from the client.
 
 Usefull to troubleshoot reverse proxies, load balancers and API Gateways.
 
