@@ -25,7 +25,7 @@ func TestHandlerRequestInfo_DefaultResponse(t *testing.T) {
 
 	HandlerRequestInfo(rec, req)
 	if status := rec.Code; status != http.StatusOK {
-		t.Errorf("handler returned wrong status code: go %v want %v", status, http.StatusOK)
+		t.Errorf("handler returned wrong status code: got %v want %v", status, http.StatusOK)
 	}
 
 	resp := rec.Body.String()
