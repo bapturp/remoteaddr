@@ -2,9 +2,9 @@
 
 ![GitHub Actions Workflow Test Status](https://github.com/bapturp/remoteaddr/actions/workflows/test.yaml/badge.svg) ![GitHub Actions Workflow Release Status](https://github.com/bapturp/remoteaddr/actions/workflows/release.yaml/badge.svg)
 
- Simple web server that replies to requests by echoing the information it receives from the client.
+Simple web server that replies to requests by echoing the information it receives from the client.
 
-Usefull to troubleshoot reverse proxies, load balancers and API Gateways.
+Useful to troubleshoot reverse proxies, load balancers, service mesh and API Gateways.
 
 ```
 ➜  ~ curl http://127.0.0.1:8080/
