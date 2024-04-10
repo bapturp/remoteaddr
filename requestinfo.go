@@ -25,7 +25,7 @@ func (ri RequestInfo) DefaultResponse() string {
 	s += fmt.Sprintf("%s %s %s\n", ri.Method, ri.Path, ri.Proto)
 	s += fmt.Sprintf("%-15s %s\n", "Remote address:", ri.RemoteAddr)
 	s += fmt.Sprintf("%-15s %s\n", "Host:", ri.Host)
-	s += "Headers:"
+	s += "Headers:\n"
 	for k, v := range ri.Headers {
 		s += fmt.Sprintf("  %s: %s\n", k, v)
 	}
